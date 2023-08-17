@@ -314,3 +314,9 @@ exercises.c:32:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 62e2ff6
+Thu 17 Aug 2023 08:36:09 PM UTC: 
+ exercises.c | 27 ++++++++-------------------
+ 1 file changed, 8 insertions(+), 19 deletions(-)
+ tests:  0|6
+total_score: 10/70
+a6795df

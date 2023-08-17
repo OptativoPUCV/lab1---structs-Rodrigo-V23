@@ -11,18 +11,15 @@ y su tamaño, y devuelva el valor más grande del arreglo.
 */
 int findMax(int arr[], int size) 
 {
-  int inicio = 0;
-  int final = size - 1;
-  while(inicio < final)
+  int num_mayor = arr[0];
+  for(int i = 1 ; i < size ; i++)
     {
-      int valor = arr[inicio];
-      arr[inicio] = arr[final];
-      arr[final] = valor;
-
-      inicio++;
-      final--;
+      if(arr[i] > num_mayor)
+      {
+        num_mayor = arr[i];
+      }
     }
-  return 0;
+  return num_mayor;
 }
 /*
 Ejercicio 2: Invertir un Arreglo
@@ -31,15 +28,7 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) 
 {
-  us num_mayor = arreglo[0];
-  for(us i = 1 ; i < tamano ; i++)
-    {
-      if(arreglo[i] > num_mayor)
-      {
-        num_mayor = arreglo[i];
-      }
-    }
-  return 0;
+  
 }
 
 /*
