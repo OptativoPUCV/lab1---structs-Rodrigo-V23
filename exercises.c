@@ -11,7 +11,7 @@ y su tamaño, y devuelva el valor más grande del arreglo.
 */
 int findMax(int arr[], int size) 
 {
-  for(us i = 1 ; i < tamano ; i++)
+  for(us i = 1 ; i < size ; i++)
     {
       if(arr[i] > num_mayor)
       {
