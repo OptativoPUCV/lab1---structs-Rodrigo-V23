@@ -19,7 +19,7 @@ int findMax(int arr[], int size)
         num_mayor = arr[i];
       }
     }
-  return 0;
+  return num_mayor;
 }
 
 /*
