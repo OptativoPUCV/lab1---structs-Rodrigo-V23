@@ -255,3 +255,35 @@ exercises.c:32:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 ac63fa0
+Thu 17 Aug 2023 08:35:40 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:23:7: error: ‘fin’ undeclared (first use in this function); did you mean ‘fmin’?
+   23 |       fin--;
+      |       ^~~
+      |       fmin
+exercises.c:23:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:3: error: unknown type name ‘us’
+   34 |   us num_mayor = arreglo[0];
+      |   ^~
+exercises.c:34:18: error: ‘arreglo’ undeclared (first use in this function)
+   34 |   us num_mayor = arreglo[0];
+      |                  ^~~~~~~
+exercises.c:35:7: error: unknown type name ‘us’
+   35 |   for(us i = 1 ; i < tamano ; i++)
+      |       ^~
+exercises.c:35:22: error: ‘tamano’ undeclared (first use in this function)
+   35 |   for(us i = 1 ; i < tamano ; i++)
+      |                      ^~~~~~
+exercises.c:42:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   42 |   return 0;
+      |          ^
+exercises.c:32:6: note: declared here
+   32 | void reverseArray(int arr[], int size)
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+88029d9

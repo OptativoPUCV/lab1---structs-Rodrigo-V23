@@ -17,7 +17,7 @@ int findMax(int arr[], int size)
     {
       int valor = arr[inicio];
       arr[inicio] = arr[final];
-      arr[final] = valor
+      arr[final] = valor;
 
       inicio++;
       fin--;
