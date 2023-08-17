@@ -320,3 +320,31 @@ Thu 17 Aug 2023 08:36:09 PM UTC:
  tests:  0|6
 total_score: 10/70
 a6795df
+Thu 17 Aug 2023 08:38:50 PM UTC: 
+ exercises.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:32:15: error: ‘tamano’ undeclared (first use in this function)
+   32 |   int final = tamano - 1;
+      |               ^~~~~~
+exercises.c:32:15: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:35:7: error: unknown type name ‘us’
+   35 |       us valor = arr[inicio];
+      |       ^~
+exercises.c:37:25: error: expected ‘;’ before ‘inicio’
+   37 |       arr[final] = valor
+      |                         ^
+      |                         ;
+   38 | 
+   39 |       inicio++;
+      |       ~~~~~~             
+exercises.c:42:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   42 |   return 0;
+      |          ^
+exercises.c:29:6: note: declared here
+   29 | void reverseArray(int arr[], int size)
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5163c3a
