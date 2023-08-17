@@ -84,3 +84,9 @@ exercises.c:14:3: error: unknown type name ‘unt’; did you mean ‘uint’?
       |   uint
 Compilation failed
 6981e9e
+Thu 17 Aug 2023 08:33:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|7
+total_score: 0/70
+c464b9a
