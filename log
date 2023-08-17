@@ -31,3 +31,20 @@ test.c:91:18: error: implicit declaration of function ‘findMax’ [-Werror=imp
 cc1: all warnings being treated as errors
 Compilation failed
 269aceb
+Thu 17 Aug 2023 08:32:05 PM UTC: 
+ exercises.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:7: error: unknown type name ‘us’
+   14 |   for(us i = 1 ; i < tamano ; i++)
+      |       ^~
+exercises.c:14:22: error: ‘tamano’ undeclared (first use in this function)
+   14 |   for(us i = 1 ; i < tamano ; i++)
+      |                      ^~~~~~
+exercises.c:14:22: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:16:19: error: ‘num_mayor’ undeclared (first use in this function)
+   16 |       if(arr[i] > num_mayor)
+      |                   ^~~~~~~~~
+Compilation failed
+d3e74f1
