@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
 /*
 Ejercicio 1: Encuentra el Elemento Mayor
@@ -65,7 +64,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) 
-
+{}
 
 /*
 Ejercicio 6: Información de una Biblioteca
