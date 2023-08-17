@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef unsigned short us;
 /*
 Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros

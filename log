@@ -21,3 +21,13 @@ test.c:91:18: error: implicit declaration of function ‘findMax’ [-Werror=imp
 cc1: all warnings being treated as errors
 Compilation failed
 77ee814
+Thu 17 Aug 2023 08:30:45 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+test.c: In function ‘test_findMax’:
+test.c:91:18: error: implicit declaration of function ‘findMax’ [-Werror=implicit-function-declaration]
+   91 |     int result = findMax(arr, size);
+      |                  ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+269aceb
