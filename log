@@ -941,3 +941,14 @@ exercises.c:65:47: error: expected ‘;’ before ‘}’ token
       |                                               ;
 Compilation failed
 6196b40
+Thu 17 Aug 2023 08:56:55 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:65:48: error: expected ‘;’ before ‘}’ token
+   65 | int checkSorted(int arr[], int size) {return -2}
+      |                                                ^
+      |                                                ;
+Compilation failed
+e94538f
