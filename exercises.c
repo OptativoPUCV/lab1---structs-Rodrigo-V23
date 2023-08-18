@@ -51,11 +51,13 @@ int* filterEvenNumbers(const int arr[], int size, int *newSize)
 {
     int evenCount = 0;
     
-    for (int i = 0; i < size; i++) {
-        if (arr[i] % 2 == 0) {
+    for (int i = 0; i < size; i++)
+      {
+        if (arr[i] % 2 == 0)
+        {
             evenCount++;
         }
-    }
+      }
     
     int* evenArray = (int*)malloc(evenCount * sizeof(int));
     
