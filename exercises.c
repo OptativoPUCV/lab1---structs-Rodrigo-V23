@@ -49,30 +49,30 @@ los números pares del arreglo original.
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
   int cont = 0;
-  for(int i = 0; i < size; i++)
+  for(int i = 0 ; i < size ; i++)
     {
-      if (arr[i] % 2 == 0)
+      if(arr[i] % 2 == 0)
       {
-          cont++;
+        cont++;
       }
     }
+  int *arreglo_pares = (int*)malloc(cont * sizeof(int));
   
-  int* arreglo_pares = (int*)malloc(cont * sizeof(int));
-  
-  if (arreglo_pares == NULL)
+  if(arreglo_pares == NULL)
   {
-      *newSize = 0;
-      return NULL;
+    *newSize = 0;
+    return NULL;
   }
-  
   int temp = 0;
   
-  for (int i = 0; i < size; i++) {
-      if (arr[i] % 2 == 0) {
-          arreglo_pares[temp] = arr[i];
-          temp++;
+  for(int i = 0 ; i < size ; i++)
+    {
+      if(arr[i] % 2 == 0)
+      {
+        arreglo_pares[temp] = arr[i];
+        temp++;
       }
-  }
+    }
   
   *newSize = cont;
   return arreglo_pares;
