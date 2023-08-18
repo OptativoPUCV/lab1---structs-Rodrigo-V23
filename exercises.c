@@ -48,18 +48,19 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
-  int evenCount = 0;
-  for (int i = 0; i < size; i++)
+  int cont = 0;
+  for(int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)
       {
-          evenCount++;
+          cont++;
       }
     }
   
-  int* evenArray = (int*)malloc(evenCount * sizeof(int));
+  int* arreglo_pares = (int*)malloc(cont * sizeof(int));
   
-  if (evenArray == NULL) {
+  if (arreglo_pares == NULL)
+  {
       *newSize = 0;
       return NULL;
   }
@@ -68,13 +69,13 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   
   for (int i = 0; i < size; i++) {
       if (arr[i] % 2 == 0) {
-          evenArray[temp] = arr[i];
+          arreglo_pares[temp] = arr[i];
           temp++;
       }
   }
   
-  *newSize = evenCount;
-  return evenArray;
+  *newSize = cont;
+  return arreglo_pares;
 }
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
