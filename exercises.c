@@ -197,39 +197,39 @@ typedef struct nodo
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 {
-    if(size <= 0)
-    {
-        return NULL;
-    }
-    Nodo *primer_nodo = (Nodo *)malloc(sizeof(Nodo));
-    if(primer_nodo == NULL)
-    {
-        return NULL; 
-    }
-    primer_nodo->numero = arr[0];
-    primer_nodo->siguiente = NULL;
+  if(size <= 0)
+  {
+    return NULL;
+  }
+  Nodo *primer_nodo = (Nodo*)malloc(sizeof(Nodo));
+  if(primer_nodo == NULL)
+  {
+    return NULL; 
+  }
+  primer_nodo->numero = arr[0];
+  primer_nodo->siguiente = NULL;
 
-    Nodo *ultimo_nodo = primer_nodo;
+  Nodo *ultimo_nodo = primer_nodo;
 
-    for (int i = 1; i < size; i++) {
-        Nodo *nuevo_nodo = (Nodo *)malloc(sizeof(Nodo));
-        if (nuevo_nodo == NULL)
-        {
-          Nodo *actual = primer_nodo;
-          while (actual != NULL)
-            {
-              Nodo *siguiente = actual->siguiente;
-              free(actual);
-              actual = siguiente;
+  for(int i = 1 ; i < size ; i++)
+    {
+      Nodo *nuevo_nodo = (Nodo*)malloc(sizeof(Nodo));
+      if (nuevo_nodo == NULL)
+      {
+        Nodo *actual = primer_nodo;
+        while(actual != NULL)
+          {
+            Nodo *siguiente = actual->siguiente;
+            free(actual);
+            actual = siguiente;
           }
-          return NULL;
-        }
-        nuevo_nodo->numero = arr[i];
-        nuevo_nodo->siguiente = NULL;
+        return NULL;
+      }
+      nuevo_nodo->numero = arr[i];
+      nuevo_nodo->siguiente = NULL;
 
-        ultimo_nodo->siguiente = nuevo_nodo;
-        ultimo_nodo = nuevo_nodo;
-    }
-
-    return primer_nodo;
+      ultimo_nodo->siguiente = nuevo_nodo;
+      ultimo_nodo = nuevo_nodo;
+  }
+  return primer_nodo;
 }
