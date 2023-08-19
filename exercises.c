@@ -201,8 +201,8 @@ Nodo *crearListaEnlazada(int arr[], int size)
     {
         return NULL;
     }
-    Nodo *primerNodo = (Nodo *)malloc(sizeof(Nodo));
-    if(primerNodo == NULL)
+    Nodo *primer_nodo = (Nodo *)malloc(sizeof(Nodo));
+    if(primer_nodo == NULL)
     {
         return NULL; 
     }
