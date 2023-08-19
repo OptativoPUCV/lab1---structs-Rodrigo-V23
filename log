@@ -1435,3 +1435,19 @@ Sat 19 Aug 2023 01:17:22 AM UTC:
  tests:  0|0
 total_score: 70/70
 28a9c61
+Sat 19 Aug 2023 01:29:38 AM UTC: 
+ exercises.c | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:209:5: error: ‘primer_nodo’ undeclared (first use in this function); did you mean ‘primerNodo’?
+  209 |     primer_nodo->numero = arr[0];
+      |     ^~~~~~~~~~~
+      |     primerNodo
+exercises.c:209:5: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:235:1: error: control reaches end of non-void function [-Werror=return-type]
+  235 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2e01567
